@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    width: auto;
+    background-color: rgba(217, 217, 217, 0.468);
+}
+
+nav {
+    display: grid;
+    background-color: rgb(30, 29, 29);
+    padding: 12px;
+    max-height: max-content;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding: 5px;
+    size: 4px;
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    text-decoration: aqua;
+    color: white;
+    background-color: black;
+}
+
+.ima {
+    display: grid;
+    justify-content: end;
+    justify-items: center;
+    margin-top: -50px;
+
+}
+
+img {
+    width: 20px;
+    size: 7px;
+}
+
+h3 {
+    font-family: jumble;
+    text-align: center;
+    padding: 1px;
+    color: grey;
+    margin-top: -1px;
+}
+
+#linea {
+    width: 150px;
+    color: grey;
+}
+
+
+
+aside {
+    display: grid;
+    width: auto;
+    height: 89px;
+    margin-left: 1px;
+    padding-left: 50px;
+    background-color: rgba(181, 178, 178, 0.74);
+}
+
+h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(30, 29, 29);
+}
+
+p {
+    color: grey;
+    font-size: 15px;
+    font-family: Calibri;
+}
+
+aside a {
+    text-decoration: none;
+    align-items: end;
+    font-size: 10px;
+    color: rgb(30, 29, 29);
+}
+
+button {
+    width: 100px;
+    background-color: rgb(30, 29, 29);
+    color: rgba(223, 223, 223, 0.717);
+    border-radius: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    size: 7px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.contenido {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+    left: -1000px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+
+}
+
+.contenido2 {
+
+    display: grid;
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+    left: -950px;
+    margin: 5px;
+    padding: 5px;
+    align-content: center;
+
+}
+
+
+.barra {
+    display: grid;
+    flex-direction: column;
+    margin-top: auto;
+    flex-direction: column;
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 210px;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 380px;
+    top: -320px;
+}
+
+.barra .canvas {
+    display: block;
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    
+
+}
+.diagramaBarra{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input .week {
+    width: 230px;
+    height: 12px;
+    border-radius: 4px;
+    border-color: rgba(116, 116, 116, 0.735);
+}
+
+/* div ventas*/
+.ventas {
+    display: grid;
+    flex-direction: column;
+    margin-top: auto;
+    padding: -1px 0px;
+    font-size: 10px;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+    position: relative;
+    top: 145px;
+    left: 5px;
+    width: 50%;
+
+}
+
+.usuarios {
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+    position: relative;
+    top: 1px;
+    left: 361px;
+    width: 50%;
+
+}
+
+.visitas {
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+    position: relative;
+    top: -111px;
+    left: 1px;
+    
+}
+.topVisitas{
+    background: #ffffff;
+    text-align: center;
+    padding: 140px 0px;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+    position: relative;
+    top: -60px;
+    left:1px;
+
+}

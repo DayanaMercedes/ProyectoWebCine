@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vistasPrincipal.css">
+    <script src="../js/vistasPrincipal.j"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Principal</title>
+</head>
+
+<body>
+
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="vistasPrincipal.html">  Principal </a>
+            <a href="sucursales.html"> <i class="fa-solid fa-shop"></i>Sucursales</a>
+
+            <hr style="width: 150px;">
+            <br><br><br><br><br>
+            <a href="login.html" id="end"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="row">
+        <aside>
+
+            <div style="width: 980px; margin-right: 3px;">
+
+                <div>
+                    <h1>Frecuencia de visitas <p>cinéfilos de Corazón</p>
+                    </h1>
+
+                </div>
+                <div class="ima">
+                    <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario">Usuario</a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+    <div class="contenido">
+        <div class="ventas">
+            <h2>Total de ventas</h2>
+            <p id="totalVentas"></p>
+            <h2>$</h2>
+            <p id="valorTotal"></p>
+        </div>
+        <div class="usuarios">
+            <h1>Usuarios</h1>
+        </div>
+
+
+
+
+        <div class="barra">
+            <div>
+                <h1>Visitas</h1>
+            </div>
+
+            <div class="diagramaBarra">
+                <label for="week">Seleccione la week:</label>
+                <input type="week" id="week" name="week">
+                <button onclick="generateChart()">Generar gráfica</button>
+                <canvas id="chart"></canvas>
+            </div>
+            
+
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido2">
+        <div class="visitas">
+            
+            <div>
+                <h1>visitas</h1>
+
+            </div>
+
+
+        </div>
+
+        <div class="topVisitas">
+            
+            
+            <div>
+                <h1>TopVisitas</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

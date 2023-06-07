@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/productoras.js"></script>
+    <link rel="import" href="../html/login.html">
+    <link rel="stylesheet" href="./css/Productoras.css">
+    <title>Productoras</title>
+</head>
+
+<body>
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="#"><img src="../recursos/Productoras.png"> Productoras</a>
+            <a href="Compras.html"><img src="../recursos/Compras.png"> Compras</a>
+            <a href="peliculas.html"><img src="../recursos/Peliculas.png"> Peliculas</a>
+            <hr style="width: 150px;">
+            <br><br><br><br><br><br>
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+            
+        </nav>
+    </div>
+
+    <div class="row">
+        <aside>
+
+            <h1>Productoras
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario" style="font-size: 5px;">Usuario</a>
+                <p>cinéfilos de Corazón</p>
+            </h1>
+
+        </aside>
+
+        <section>
+
+            <table>
+                <td rowspan="1" style="top: 40px;">
+                    <button type="button" style="font-size: 5px;">Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="9">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Pais</th>
+                    <td style="width: 16em;"></td>
+                    <th>Teléfono</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <td style="width: 30em;"></td>
+                    <th>Representante</th>
+
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td style="width: 16em;"></td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td style="width: 30em;"></td>
+                    <td>lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td style="width: 16em;"></td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td>lorem</td>
+                    <td style="width: 30em;"></td>
+                    <td>lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="9" style="text-align: center;">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form action="">
+
+                <div class="flexcontainer">
+
+                    <div class="column1">
+
+                        <label id="label">Código</label>
+                        <br><input type="number" accept="number" max="20" id="codigo" required><br>
+                        
+                        <label id="label">Nombre</label>
+                        <br><input type="text" id="nombre" required> <br>
+                        
+                        <label id="label">Pais</label>
+                        <br><input type="text" id="pais" required><br>
+                        
+                        <label id="label">Teléfonos</label>
+                        <br><input type="tel" max="8" accept="number" id="telefono" required>
+
+                    </div>
+
+                    <div class="column2">
+                        <label id="label">Celulares</label>
+                        <br><input type="tel" max="10" id="celular" accept="number" required><br>
+                        
+                        <label id="label">Correo</label>
+                        <br><input type="email" placeholder="Correo@Gmail.com" id="correo" required><br>
+                        
+                        <label id="label">Representante</label>
+                        <br><input type="text" id="representante" required><br><br>
+
+                    </div>
+                    <div class="column3">
+                        <input type="button"  id="buttonUno" value="Registrar" onclick="capturarDatos()"><br><br>
+                        <input type="button" id="buttonDos" value="Actualizar" onclick="capturarDatos()"><br><br>
+                        <input type="reset" id="buttonTres" value="Eliminar" onclick="capturarDatos()"><br>
+                        <br><br>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </div>
+</body>
+
+</html>

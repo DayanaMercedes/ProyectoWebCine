@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.468);
+}
+
+nav {
+    display: grid;
+    background-color: rgb(30, 29, 29);
+    padding: 12px;
+    max-height: max-content;
+    height: 100%;
+    align-items: baseline;
+}
+
+nav a {
+    padding: 5px;
+    size: 4px;
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    text-decoration: aqua;
+    color: white;
+    background-color: black ;
+}
+
+img {
+    width: 20px;
+    size: 7px;
+}
+
+h3 {
+    font-family: jumble;
+    text-align: center;
+    padding: 9px;
+    color: grey;
+}
+#horizontal-line{
+    width: 70px;
+    height: 1px;
+    color: grey;
+}
+aside {
+    display: grid;
+    width: 90%;
+    height: 90px;
+    margin-left: 1px;
+    padding-left: 50px;
+    background-color: rgba(181, 178, 178, 0.74);
+}
+h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(30, 29, 29);
+}
+p {
+    color: grey;
+    font-size: 3px;
+    font-family: Calibri;
+}
+aside a{
+    text-decoration: none;
+    align-items: end;
+    font-size: 10px;
+    color: rgb(30, 29, 29);
+}
+#button3{
+    align-items: end;
+    margin-left: 720px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+section {
+    display: flex;
+    width: 85%;
+    height: min-content;
+    text-align: left;
+    margin: 10px;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding: 19px;
+    background-color: white;
+    border-radius: 20px;
+}
+hr{
+    padding: top 1px; ;
+}
+table{
+    text-align: center;
+}
+button{
+    width: 100px;
+    background-color: rgb(30, 29, 29);
+    color: rgba(223, 223, 223, 0.717);
+    border-radius: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    size: 7px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#button2{
+    width: 27px;
+    height: 25px;
+    background-color: rgba(223, 223, 223, 0.717);
+    border: none;
+    color: rgb(30, 29, 29);
+    border-radius: 7px;
+}
+#button2:hover{
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+#button1:hover{
+    color: white;
+    background-color: black;
+}
+input{
+    width: 230px;
+    height: 20px;
+    border-radius: 4px;
+    border-color: rgb(198, 193, 193);
+}
+.flexcontainer{
+    display: flex;
+    text-align: left;
+}
+
+form{
+    margin: 10px;
+    height: min-content;
+    padding-left: 1em;
+}
+.column1{
+    font-size: 12px;
+
+}
+.column2{
+    margin-left: 5em;
+    font-size: 12px;
+}
+.column3{
+    align-items: center;
+    margin-left: 6em;
+} 
+#buttonUno{   
+    width: 10em;
+    height: 20px;
+    border-radius: 7px;
+    background-color:rgb(30, 29, 29);
+    border: none;
+    color: rgba(223, 223, 223, 0.717);
+    border-radius: 5px;
+}
+#buttonUno:hover{
+    color: white;
+    background-color: black;
+}
+#buttonDos{   
+    width: 10em;
+    height: 20px;
+    border-radius: 7px;
+    background-color:rgb(30, 29, 29);
+    border: none;
+    color: rgba(223, 223, 223, 0.717);
+    border-radius: 5px;
+
+}
+#buttonDos:hover{
+    color: white;
+    background-color: black;
+}
+#buttonTres{   
+    width: 10em;
+    height: 20px;
+    border-radius: 7px;
+    background-color:rgb(30, 29, 29);
+    border: none;
+    color: rgba(223, 223, 223, 0.717);
+    border-radius: 5px;
+}
+#buttonTres:hover{
+    color: white;
+    background-color: black;
+}

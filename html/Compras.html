@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/compras.css">
+    <title>Compras</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="productoras.html"><img src="../recursos/Productoras.png">Productoras</a>
+            <a href="Compras.html"><img src="../recursos/Compras.png"> Compras</a>
+            <a href="peliculas.html"><img src="../recursos/Peliculas.png"> Peliculas</a>
+            <hr style="width: 150px;">
+            <br><br><br><br><br>
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="row">
+
+        <aside>
+
+            <h1>Compras
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario" style="font-size: 5px;">Usuario</a>
+                <p>cinéfilos de Corazón</p>
+            </h1>
+
+        </aside>
+
+        <section>
+
+            <table width="100%">
+
+                <td rowspan="1" style="width: 60px; font-size: 2px;">
+                    <button type="button1" style="font-size: 5px;">Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Numero</th>
+                    <th>Sucursal</th>
+                    <th>Pelicula</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>SubTotal</th>
+                    <th>Total</th>
+                    <th>Precio</th>                    
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>1</td>
+                    <td>01/01/2023</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>$200.000</td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>1</td>
+                    <td>01/01/2023</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>$200.000</td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form action="">
+                <div class="flexcontainer">
+                    <div class="column1">
+                        <label for="numero">Numero</label><br>
+                        <input type="text" id="numero" accept="number" required><br>
+                        
+                        <br/>
+                        <label for="sucursal">Sucursal</label><br>
+                        <select id="sucursal">
+                            <option value="Sucursal">Sucursal</option>
+                            <option value="Sucursal1">Sucursal 1</option>
+                            <option value="Sucursal2">Sucursal 2</option>
+                            <option value="Sucursal3">Sucursal 3</option>
+                        </select>
+
+                        <br/><br/>
+                        <label for="pelicula">Pelicula</label><br>
+                        <select id="pelicula">
+                            <option value="Pelicula">Pelicula</option>
+                            <option value="Pelicula1">Pelicula 1</option>
+                            <option value="Pelicula2">Pelicula 2</option>
+                            <option value="Pelicula3">Pelicula 3</option>
+                        </select>
+
+                        <br/><br/>
+                        <label for="cantidad">Cantidad</label><br>
+                        <input type="number" id="cantidad" accept="number" required><br>
+
+                    </div>
+
+                    <div class="column2">
+                        <label for="fecha">Fecha</label><br>
+                        <input type="date" id="fecha" required><br>
+
+                        <br/>
+                        <label for="subTotal">Subtotal</label><br>
+                        <input type="number" id="subTotal" accept="number" required><br>
+
+                        <br/>
+                        <label for="total">Total</label><br>
+                        <input type="number" id="total" accept="number" required><br>
+
+                        <br/>
+                        <label for="precio">Precio</label><br>
+                        <input type="number" id="precio" accept="number" required><br>
+                    </div>
+
+                    <div class="column3">
+                        <input type="button" id="buttonUno" value="Registrar" onclick="capturarDatos()"><br><br>
+                        <input type="button" id="buttonDos" value="Actualizar" onclick="capturarDatos()"><br><br>
+                        <input type="reset" id="buttonTres" value="Eliminar" onclick="capturarDatos()">
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

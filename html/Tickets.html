@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tickets.css">
+    <link rel="import" href="../html/login.html">
+    <script src="../js/tickets.js"></script>
+    <title>Tickets</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="Tickets.html"><img src="../recursos/Tikets.png"> Tikets</a>
+            <hr style="width: 150px;">
+            <br><br><br><br><br>
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="row">
+
+        <aside>
+
+            <h1>Tickets
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario" style="font-size: 5px;">Usuario</a>
+                <p>cinéfilos de Corazón</p>
+            </h1>
+
+        </aside>
+
+        <section>
+
+            <table width="100%">
+
+                <td rowspan="1" style="width: 60px; font-size: 2px;">
+                    <button type="button1" style="font-size: 16px;">Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Sala</th>
+                    <th>Horario</th>
+                    <th>Cantidad</th>
+                    <th>Posiciones</th>
+                    <th>FormaPago</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Vendedor</th>                    
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>01/01/2023</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>01/01/2023</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form action="">
+                <div class="flexcontainer">
+                    <div class="column1">
+                        <label for="sala">Sala</label><br>
+                        <input type="text" id="sala" required><br>
+                        
+                        <br/>
+                        <label for="horario">Horario</label><br>
+                        <input type="time" id="horario" required><br>
+
+                        <br/>
+                        <label for="cantidad">Cantidad</label><br>
+                        <input type="number" id="cantidad" value="0" accept="number" required><br>
+
+                        <br/>
+                        <label for="posiciones">Posiciones</label><br>
+                        <input type="text" id="posiciones" required><br>                        
+
+                    </div>
+
+                    <div class="column2">
+                        <label for="formapago">Forma Pago</label><br>
+                        <select id="formapago">
+                            <option value="efectivo">Efectivo</option>
+                            <option value="tarjeta">Tarjeta</option>
+                            <option value="pse">Pse</option>
+                            <option value="transferencia">Transferencia</option>
+                        </select>
+
+                        <br/><br/>
+                        <label for="cliente">Cliente</label><br>
+                        <select id="cliente">
+                            <option value="Cliente">Cliente</option>
+                            <option value="Cliente1">Cliente 1</option>
+                            <option value="Cliente2">Cliente 2</option>
+                            <option value="Cliente3">Cliente 3</option>
+                        </select>
+
+                        <br/><br/>
+                        <label for="fecha">Fecha</label><br>
+                        <input type="date" id="fecha"  required><br>
+
+                        <br/>
+                        <label for="vendedor">Vendedor</label><br>
+                        <select id="vendedor">
+                            <option value="Vendedor">Vendedor</option>
+                            <option value="Vendedor1">Vendedor 1</option>
+                            <option value="Vendedor2">Vendedor 2</option>
+                            <option value="Vendedor3">Vendedor 3</option>
+                        </select>
+
+                    </div>
+
+                    <div class="column3">
+                        <input type="button" id="buttonUno" value="Registrar" onclick="capturarDatos()"><br><br>
+                        <input type="button" id="buttonDos" value="Actualizar" onclick="capturarDatos()"><br><br>
+                        <input type="reset" id="buttonTres" value="Eliminar" onclick="capturarDatos()">
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

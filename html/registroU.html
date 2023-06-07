@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registroU.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registro Usuario</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+
+            <label >
+                <h3>Registro De Usuario</h3><br>
+                <h5 style="color: rgb(142, 142, 142); margin: 0;">Cinéfilos de Corazón</h5>
+
+            </label>
+
+        </div>
+
+        <div class="contenedor-login">
+            <form action="">
+                <h1 class="titulo">Registro De Usuarios</h1>
+                
+                <label>
+                    <i class="fa-solid fa-user"> Nombre</i><br>
+                    <input placeholder="Usuario" type="text" id="nombreUsuario" value="">
+                </label>
+                <label>
+                    &emsp; &emsp; &emsp;&emsp; &emsp;<i class="fa-solid fa-user">Correo Elecetronico</i><br>
+                    <input placeholder="Correo" type="text" id="correoElecetronico">
+                </label>
+                <label>
+                    <i class="fa-solid fa-location-dot">Direccion</i><br>
+                    <input placeholder="Direccion" type="text" id="direccion">
+                </label>
+                <label>
+                    <i class="fa-solid fa-lock"> Password</i><br>
+                    <input placeholder="********" type="password" id="contraseña">
+                </label>
+                <div class="rolesBox">
+                    <label  for="rol">Rol de Usuario:</label>
+                    <select id="rol" name="rol">
+                      <option value="vendedor">Usuario Vendedor</option>
+                      <option value="gerente">Usuario Gerente</option>
+                      <option value="cliente">Usuario Cliente</option>
+                      <option value="administrador">Usuario Administrador</option>
+                    </select><br><br>
+                </div>
+                
+                
+        
+
+               <button id="buttonRegistro">Registrar Usuario</button><br>
+               <button  type="" id="buttonLogin"><a style="text-decoration: none; color: #fff;"" href="../login.html">Inicio De Sesion</a></button>
+            
+            </form>
+
+        </div>
+
+    </div>
+
+        <script src="../js/usuarioRegistro.js"></script>
+</body>
+
+</html>

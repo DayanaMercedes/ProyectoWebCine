@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/cartelera.css">
+    <script src="../js/cartelera.js"></script>
+    <title>Cartelera</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="Compras.html"><img src="../recursos/Compras.png"> Compras</a>
+            <a href="cartelera.html"><img src="../recursos/Carteleras.png"> Carteleras</a>
+            <hr style="width: 150px; max-height: max-content;">
+            <br><br><br><br>
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="grid">
+        <aside>
+            <h1>Cartelera
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario"
+                    style="font-size: 17px;align-items: end;">Usuario</a>
+                <p style="font-size: 13px;">cinéfilos de Corazón</p>
+            </h1>
+        </aside>
+
+        <section>
+
+            <table class="flexContainer">
+                <td rowspan="1">
+                    <button type="button1" ><i class="fa-solid fa-rotate-right"></i> Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Sala</th>
+                    <th>Horario</th>
+                    <th>Pelicula</th>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Fin</th>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12:00</td>
+                    <td>Lorem Ipsum et Dolor</td>
+                    <td>02/06/2023</td>
+                    <td>02/06/2023</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12:00</td>
+                    <td>Lorem Ipsum et Dolor</td>
+                    <td>02/06/2023</td>
+                    <td>02/06/2023</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form>
+
+                <div class="flexcontainer">
+
+                    <div class="column1">
+
+                        <label>Sala</label>
+                        <br><input type="number" max="5" min="0" accept="number" id="Sala"><br><br>
+
+                        <label>Horario</label>
+                        <br><input type="datetime" id="Horario"> <br><br>
+
+                        <label>Peliculas</label><br>
+                        <select id="Peliculas" class="column4">
+                            <option value="Peliculas">Peliculas</option>
+                            <option value="Pelicula 1">Pelicula 1</option>
+                            <option value="Pelicula 2">Pelicula 2</option>
+                            <option value="Pelicula 3">Pelicula 3</option>
+                            <option value="Pelicula 4">Pelicula 4</optionr>
+                        </select>
+
+                    </div>
+
+                    <div class="column2">
+
+                        <label>Fecha inicio</label>
+                        <br><input type="date" id="FechaInicio"><br><br>
+
+                        <label>Fecha fin</label>
+                        <br><input type="date" id="FechaFin"><br><br>
+
+                    </div>
+
+                    <div class="column3">
+                        <input type="button" id="buttonUno" value="Registrar" onclick="capturarDatos()"><br><br>
+                        <input type="button" id="buttonDos" value="Actualizar" onclick="capturarDatos()"><br><br>
+                        <input type="reset" id="buttonTres" value="Eliminar" onclick="capturarDatos()">
+                    </div>
+
+                </div>
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

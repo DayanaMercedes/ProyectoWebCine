@@ -1,0 +1,109 @@
+* {
+
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    overflow: hidden;
+
+}
+
+.contenedor-login {
+    display: grid;
+
+}
+
+.encabezado {
+    display: grid;
+    margin: 15px;
+    align-items: normal;
+
+    justify-content: left;
+    background-color: #d6d6d6;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    max-width: 100%;
+    width: 98%;
+
+}
+
+
+form {
+    display: grid;
+    flex-direction: column;
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 80px;
+    box-shadow: 0 5px 10px rgba(56, 50, 50, 0.7);
+    border-radius: 10px;
+
+}
+
+form .titulo {
+
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 60px;
+
+}
+
+form label .fa-regular {
+    font-size: 90px;
+}
+
+form label .fa-solid {
+
+    font-size: 14px;
+    color: #000000;
+    margin-right: 146px;
+
+}
+
+form label input {
+
+    outline: no;
+    color: #000000;
+    border-bottom: solid 0.5px black;
+    padding: 5 10x;
+    font-size: 20px;
+
+
+}
+
+form label input::placeholder {
+
+    color: #000000ac;
+
+}
+
+form .link {
+
+    color: #252525;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+}
+
+form button {
+
+    padding: 10px 10px;
+    margin: 0px 32px;
+    color: #f6f6f6;
+    border: none;
+    border-radius: 5px;
+    background-color:#000000
+}

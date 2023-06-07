@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/peliculas.css">
+    <script src="../js/sucursales.js"></script>
+    <title>Sucursales</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="Principal"><img src="../recursos/Principal.png"> Principal </a>
+            <a href="sucursales.html"><img src="../recursos/Sucursales.png"> Sucursales</a>
+            <hr style="width: 150px;">
+            <br><br><br><br><br><br><br><br><br><br>v
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="row">
+        <aside>
+            <h1>Sucursales
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario" style="font-size: 5px;">Usuario</a>
+                <p>cinéfilos de Corazón</p>
+            </h1>
+
+        </aside>
+
+        <section>
+
+            <table>
+
+                <td rowspan="1" style="top: 40px;">
+                    <button type="button1" style="font-size: 5px;" >Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>Codigo</th>
+                    <td>Direccion</th>
+                    <td>Departamento</th>
+                    <td>Ciudad</th>
+                    <td>Gerente</th>
+                    <td>Salas</th>
+                    <td>Trabajadores</th>
+                    <td>Cafeteria</th>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>SI</td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>2</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>6</td>
+                    <td>21</td>
+                    <td>NO</td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form>
+                <div class="flexcontainer">
+
+                    <div class="column1">
+
+                        <label>Código</label>
+                        <br><input type="number" maxlength="6" minlength="0" accept="number" id="codigo"><br>
+                        <form>
+                            <label for="direccion">Dirección con Barrio:</label>
+                            <input type="text" id="direccion" name="direccion" placeholder=" Calle-Barrio " required
+                        </form>
+                        <label>Departamento</label>
+                        <br><input type="text" id="departamento"><br>
+
+                        <label>Ciudad</label>
+                        <br><input type="text" id="ciudad"><br>
+
+                    </div>
+
+                    <div class="column2">
+
+                        <label>Gerente</label>
+                        <br><input type="text" id="gerente"><br>
+
+                        <label>Salas</label>
+                        <br><input type="number" accept="number" id="salas"><br>
+
+                        <label>Trabajadores</label>
+                        <br><input type="number" max="20" min="1" accept="number" id="trabajadores"><br>
+
+                        <label>Cafeteria</label>
+                        <div class="column4">
+                         <input type="radio" name="SI" id="cafeteria">SI
+                        </div>
+                        <div class="column5">
+                         <input type="radio" name="NO" id="cafeteria">NO
+                        </div>
+
+                    </div>
+
+                    <div class="column3">
+                        <input type="button" value="Registrar" id="buttonUno" onclick="capturarDatos()"><br><br>
+                        <input type="button" value="Actualizar" id="buttonDos" onclick="capturarDatos()"><br><br>
+                        <input type="reset" value="Eliminar" id="buttonTres" ><br><br>
+                        <br><br><br><br><br>
+                    </div>
+
+                </div>
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

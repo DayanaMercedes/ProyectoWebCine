@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/peliculas.css">
+    <script src="../js/peliculas.js"></script>
+    <title>Peliculas</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <nav>
+            <h3>@cinéfilos</h3>
+            <a href="productoras.html"><img src="../recursos/Productoras.png">Productoras</a>
+            <a href="Compras.html"><img src="../recursos/Compras.png"> Compras</a>
+            <a href="peliculas.html"><img src="../recursos/Peliculas.png"> Peliculas</a>
+            <hr style="width: 150px;">
+            <br><br><br><br><br>
+            <a href="login.html" id="end"><img src="../recursos/Log Out.png"> Log Out</a>
+        </nav>
+    </div>
+
+    <div class="row">
+
+        <aside>
+
+            <h1>Peliculas
+                <img src="../recursos/Usuario1.jpeg" id="button3"><a href="Usuario" style="font-size: 5px;">Usuario</a>
+                <p>cinéfilos de Corazón</p>
+            </h1>
+
+        </aside>
+
+        <section>
+
+            <table>
+
+                <td rowspan="1" style="width: 60px; font-size: 2px;">
+                    <button type="button1" style="font-size: 5px;">Actualizar</button>
+                </td>
+                <tr>
+                    <td colspan="12">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Codigo</th>
+                    <th>NombreOri</th>
+                    <th>Nombre</th>
+                    <th>IdiomaOri</th>
+                    <th>Idioma</th>
+                    <th>Subtitulos</th>
+                    <th>Duración</th>
+                    <th>ActoresPrinc</th>
+                    <th>ActoresSec</th>
+                    <th>CantAfiches</th>
+                    <th>Copias</th>
+                    <th>Productoras</th>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>ING</td>
+                    <td>ESP</td>
+                    <td>ESP</td>
+                    <td>1:34:52</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>24</td>
+                    <td>6</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>FR</td>
+                    <td>ESP</td>
+                    <td>ESP</td>
+                    <td>1:34:52</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>31</td>
+                    <td>4</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <button id="button2">1</button>
+                        <button id="button2">2</button>
+                        <button id="button2">3</button>
+                        <button id="button2">4</button>
+                        <button id="button2">5</button>
+                        <button id="button2">...</button>
+                        <button id="button2">20</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form action="">
+                <div class="flexcontainer">
+                    <div class="column1">
+                        <label for="codigo">Código</label><br>
+                        <input type="text" id="codigo" accept="number" required><br>
+
+                        <label for="nombreOriginal">Nombre Original</label>
+                        <input type="text" id="nombreOriginal" required><br>
+
+                        <label for="nombreAsignado">Nombre Asignado</label>
+                        <input type="text" id="nombreAsignado" required><br>
+
+                        <label for="idiomaOriginal">Idioma Original</label>
+                        <input type="text" id="idiomaOriginal" required><br>
+
+                        <label for="idiomaDisponible">Idioma Disponible</label>
+                        <input type="text" id="idiomaDisponible" required><br>
+
+                    </div>
+
+                    <div class="column2">
+                        <label for="actoresPrincipales">Actores Principales</label>
+                        <input type="text" id="actoresPrincipales" required><br>
+
+                        <label for="actoresSecundarios">Actores Secundarios</label>
+                        <input type="text" id="actoresSecundarios" required><br>
+
+                        <label for="cantidadAfiches">Cantidad de Afiches</label>
+                        <input type="number" id="cantidadAfiches" accept="number" required><br>
+
+                        <label for="copias">Copias</label><br>
+                        <input type="number" id="copias" accept="number" required><br>
+
+                        <label for="productoras">Productoras</label><br>
+                        <select id="Productora">
+                            <option value="Productora">Productora</option>
+                            <option value="Productora 1">Productoras1</option>
+                            <option value="Productora 2">Productora 2</option>
+                            <option value="Productora 3">Productora 3</option>
+                        </select>
+                    </div>
+
+                    <div class="column3">
+                        <input type="button" id="buttonUno" value="Registrar" onclick="capturarDatos()"><br><br>
+                        <input type="button" id="buttonDos" value="Actualizar" onclick="capturarDatos()"><br><br>
+                        <input type="reset" id="buttonTres" value="Eliminar" onclick="capturarDatos()">
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
